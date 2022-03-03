@@ -35,7 +35,7 @@ class MontyHallSimulator:
         self.iterations = iterations
         self.is_turned = False
 
-    def startup(self):
+    def startup(self) -> None:
         for _ in range(self.iterations):
             random_index = randint(1, self.door_amount)
             choice = self.choices.pop(random_index-1)
