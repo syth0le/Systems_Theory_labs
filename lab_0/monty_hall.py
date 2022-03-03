@@ -39,7 +39,7 @@ class MontyHallSimulator:
         for _ in range(self.iterations):
             random_index = randint(1, self.door_amount)
             choice = self.choices.pop(random_index-1)
-            # breakpoint()
+
             random_index_between_two = randint(1, len(self.choices))
             if self.choices[random_index_between_two-1] == MontyHallChoices.AUTO.value:
                 stayed = self.choices.pop(random_index_between_two - 1)
